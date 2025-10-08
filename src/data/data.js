@@ -1,5 +1,5 @@
 // minimal dataset with 12 example apps. Add images as external URLs (placeholder used).
-const apps = [
+const data = [
   {
     id: 1,
     image: 'https://picsum.photos/seed/app1/200/200',
@@ -218,4 +218,4 @@ const apps = [
   }
 ];
 
-export default apps;
+export default data;

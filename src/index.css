@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  background-color: rgb(255, 252, 252);
+  color: #000;
+}
+
 .loader {
   border-top-color: transparent;
   -webkit-animation: spin 0.9s linear infinite;
