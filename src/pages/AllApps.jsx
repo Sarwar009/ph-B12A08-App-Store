@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import appsData from '../data/data'
 import AppCard from '../components/Appcard'
-import { Search } from 'lucide-react'
 
 export default function AllApps() {
   const [query, setQuery] = useState('')
@@ -13,6 +12,9 @@ export default function AllApps() {
     const t = setTimeout(() => setLoading(false), 350)
     return () => clearTimeout(t)
   }, [query])
+
+  console.log(setSort);
+  
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()

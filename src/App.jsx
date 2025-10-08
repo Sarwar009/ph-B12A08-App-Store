@@ -14,10 +14,9 @@ const App = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'apps', element: <AllApps /> },
-      { path: 'apps/:id', element: <AppDetails /> },
-      { path: 'installation', element: <MyInstallation /> },
-      // any other route handled by errorElement
+      { path: '/apps', element: <AllApps /> },
+      { path: '/apps/:id', element: <AppDetails /> },
+      { path: '/installation', element: <MyInstallation /> },
     ]
   }
 ])

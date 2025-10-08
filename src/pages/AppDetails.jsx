@@ -57,7 +57,7 @@ export default function AppDetails () {
 
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6">
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex md:flex-row items-center gap-4">
           <img
             src={app.image}
             alt={app.title}
@@ -98,7 +98,7 @@ export default function AppDetails () {
             onClick={handleInstall}
             className={`px-5 py-2.5 rounded-lg font-medium ${installed ? 'bg-white text-slate-400 cursor-not-allowed shadow-md' : 'bg-green-500 hover:bg-green-600 transition'}`}
           >
-            {installed ? 'Installed' : `Install Now (${app.size || '291 MB'})`}
+            {installed ? 'Installed' : `Install Now `}
           </button>
         </div>
       </div>
