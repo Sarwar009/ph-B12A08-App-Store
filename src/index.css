@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.loader {
+  border-top-color: transparent;
+  -webkit-animation: spin 0.9s linear infinite;
+  animation: spin 0.9s linear infinite;
+  border-radius: 50%;
+}
+@-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,12 +1,13 @@
+import React from 'react'
+import { createBrowserRouter } from 'react-router-dom'
+import RootLayout from './pages/RootLayout'
 
-
-function App() {
-
-  return (
-    <>
-      <h1 className="text-red-800 text-[100px]">App Store</h1>
-    </>
-  )
-}
+const App = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+  }
+])
 
 export default App
+
