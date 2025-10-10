@@ -28,15 +28,44 @@ export default function AppDetails () {
 
   if (!app) {
     return (
-      <div className="text-center mt-16">
-        <h3 className="text-xl font-semibold text-slate-200">App Not Found</h3>
-        <p className="text-slate-400 mt-1">No details to show for this app.</p>
-        <button
-          onClick={() => navigate ('/apps')}
-          className="mt-4 px-5 py-2 bg-indigo-600 rounded-lg hover:bg-indigo-700 transition"
-        >
-          Back to apps
-        </button>
+      <div className="flex flex-col items-center justify-center text-center mt-20 p-6">
+        <div className="bg-gradient-to-b from-indigo-700/30 to-indigo-900/10 backdrop-blur-md rounded-2xl shadow-lg p-10 border border-indigo-600/20 max-w-md w-full">
+          <div className="flex flex-col items-center space-y-4">
+            {/* Icon */}
+            <div className="bg-indigo-600/20 p-4 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10 text-indigo-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9.75 9.75L14.25 14.25M14.25 9.75L9.75 14.25M21 12A9 9 0 113 12a9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+
+            {/* Text */}
+            <h3 className="text-2xl font-bold text-slate-100 tracking-wide">
+              App Not Found
+            </h3>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              We couldn’t find any details for this app. It may have been removed or doesn’t exist.
+            </p>
+
+            {/* Button */}
+            <button
+              onClick={() => navigate ('/apps')}
+              className="mt-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition-all"
+            >
+              ← Back to Apps
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

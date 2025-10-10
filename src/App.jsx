@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import RootLayout from './pages/RootLayout'
-import NotFound from './pages/RootLayout'
+import NotFound from './pages/NotFound'
 import Home from './pages/Home'
 import AllApps from './pages/AllApps'
 import AppDetails from './pages/AppDetails'
@@ -17,6 +17,7 @@ const App = createBrowserRouter([
       { path: '/apps', element: <AllApps /> },
       { path: '/apps/:id', element: <AppDetails /> },
       { path: '/installation', element: <MyInstallation /> },
+      
     ]
   }
 ])
