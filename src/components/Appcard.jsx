@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function AppCard({ app }) {
   return (
-    <Link to={`/apps/${app.id}`} className="block  bg-white shadow-lg rounded p-3 transition">
+    <Link to={`/apps/${app.id}`} className="block  bg-white shadow-lg rounded p-3 transition shadow-md hover:shadow-xl">
       <div className="items-center gap-3 bg-white">
         <img src={app.image} alt={app.title} className="w-[240px] h-[260px] rounded object-cover" />
         <div>
