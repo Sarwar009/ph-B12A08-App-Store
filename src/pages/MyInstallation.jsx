@@ -52,14 +52,14 @@ export default function MyInstallation () {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-semibold">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+        <h2 className="text-2xl font-semibold mb-2 md:mb-0">
           My Installation ({installed.length})
         </h2>
         <select
           value={sortOrder}
           onChange={handleSortChange}
-          className="px-3 py-1 border rounded"
+          className="px-3 py-2 md:py-2 border-white-400 rounded shadow-sm" 
         >
           <option value="low-high">Downloads: Low → High</option>
           <option value="high-low">Downloads: High → Low</option>
@@ -70,7 +70,7 @@ export default function MyInstallation () {
         {sortedApps.map (a => (
           <div
             key={a.id}
-            className="bg-white shadow-md p-3 rounded flex justify-between"
+            className="bg-white shadow-md p-3 rounded flex flex-col md:flex-row justify-between"
           >
             <div className="flex items-center gap-3 ">
               <img
@@ -93,16 +93,16 @@ export default function MyInstallation () {
                 </div>
               </div>
             </div>
-            <div className="flex gap-3 mt-3">
+            <div className="flex flex-col md:flex-row gap-3 mt-3">
               <button
                 onClick={() => handleUninstall (a.id)}
-                className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg shadow hover:bg-red-600 transition-colors duration-300"
+                className="px-4 py-4 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition-colors duration-300 items-center text-center"
               >
                 Uninstall
               </button>
               <Link
                 to={`/apps/${a.id}`}
-                className="px-4 py-4 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition-colors duration-300 items-center"
+                className="px-4 py-4 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition-colors duration-300 items-center text-center"
               >
                 Details
               </Link>
