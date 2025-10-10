@@ -31,7 +31,7 @@ export default function AppDetails () {
       <div className="flex flex-col items-center justify-center text-center mt-20 p-6">
         <div className="bg-gradient-to-b from-indigo-700/30 to-indigo-900/10 backdrop-blur-md rounded-2xl shadow-lg p-10 border border-indigo-600/20 max-w-md w-full">
           <div className="flex flex-col items-center space-y-4">
-            {/* Icon */}
+          
             <div className="bg-indigo-600/20 p-4 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,6 @@ export default function AppDetails () {
               </svg>
             </div>
 
-            {/* Text */}
             <h3 className="text-2xl font-bold text-slate-100 tracking-wide">
               App Not Found
             </h3>
@@ -57,7 +56,6 @@ export default function AppDetails () {
               We couldn’t find any details for this app. It may have been removed or doesn’t exist.
             </p>
 
-            {/* Button */}
             <button
               onClick={() => navigate ('/apps')}
               className="mt-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition-all"
@@ -125,7 +123,7 @@ export default function AppDetails () {
           <button
             disabled={installed}
             onClick={handleInstall}
-            className={`px-5 py-2.5 rounded-lg font-medium ${installed ? 'bg-white text-slate-400 cursor-not-allowed shadow-md' : 'bg-green-500 hover:bg-green-600 transition'}`}
+            className={`px-5 py-2.5 rounded-lg font-medium ${installed ? 'bg-white text-slate-400 cursor-not-allowed shadow-md' : 'bg-green-500 hover:bg-green-600 transition cursor-pointer'}`}
           >
             {installed ? 'Installed' : `Install Now `}
           </button>
@@ -137,33 +135,34 @@ export default function AppDetails () {
         <div className="bg-white rounded-lg p-5 border border-gray-200">
           <ResponsiveContainer width="100%" height={220}>
             <BarChart
-              data={chartData}
-              layout="vertical"
-              margin={{top: 5, right: 40, left: 40, bottom: 20}}
-            >
-              <XAxis
-                type="number"
-                domain={[0, 'dataMax + 1000']}
-                tick={{fill: '#9ca3af', fontSize: 12}}
-                axisLine={{stroke: '#e5e7eb'}}
-                tickLine={false}
-              />
-              <YAxis
-                dataKey="name"
-                type="category"
-                width={40}
-                tick={{fill: '#374151', fontSize: 13}}
-                axisLine={false}
-                tickLine={false}
-              />
-              <Tooltip cursor={{fill: 'transparent'}} content={() => null} />
-              <Bar
-                dataKey="value"
-                fill="#f97316"
-                radius={[0, 4, 4, 0]}
-                barSize={18}
-              />
-            </BarChart>
+            data={chartData}
+            layout="vertical"
+            
+          >
+            <XAxis
+              type="number"
+              domain={[0, 'dataMax + 100']}
+              tick={{ fill: '#9ca3af', fontSize: 12 }}
+              axisLine={{ stroke: '#e5e7eb' }}
+              tickLine={false}
+            />
+            <YAxis
+              dataKey="name"
+              type="category"
+              width={40}
+              tick={{ fill: '#374151', fontSize: 13 }}
+              axisLine={{ stroke: '#e5e7eb' }}
+              tickLine={false}
+              reversed={true}
+            />
+            <Tooltip cursor={{ fill: 'transparent' }} />
+            <Bar
+              dataKey="value"
+              fill="#f97316"
+              radius={[0, 4, 4, 0]}
+              barSize={18}
+            />
+          </BarChart>
           </ResponsiveContainer>
         </div>
       </div>
