@@ -7,7 +7,7 @@ This project demonstrates a modern frontend application built with React and Tai
 
 ## 🚀 Live Site
 👉 **Live Link:** https://appstorebysarwar.netlify.app/
-👉 **Live Link:** https://github.com/Sarwar009/ph-B12A08-App-Store
+👉 **Github Link:** https://github.com/Sarwar009/ph-B12A08-App-Store
 
 ---
 
