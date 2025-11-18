@@ -12,7 +12,7 @@ This project demonstrates a modern frontend application built with React and Tai
 ---
 
 ## 🖼 Screenshot
-<img width="300" height="300" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
+<img width="300" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
 
 ---
 
