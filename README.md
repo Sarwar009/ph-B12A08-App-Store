@@ -10,7 +10,9 @@ This project demonstrates a modern frontend application built with React and Tai
 👉 **Github Link:** https://github.com/Sarwar009/ph-B12A08-App-Store
 
 ---
+
 <img width="400" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
+
 ---
 
 ## 🧰 Technology Used
