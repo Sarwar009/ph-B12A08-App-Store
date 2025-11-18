@@ -1,16 +1,73 @@
-# React + Vite
+# App Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive App Store-style web application where users can browse apps, view details, and interact with a clean UI.  
+This project demonstrates a modern frontend application built with React and TailwindCSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Site
+👉 **Live Link:** https://appstorebysarwar.netlify.app/
+👉 **Live Link:** https://github.com/Sarwar009/ph-B12A08-App-Store
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖼 Screenshot
+<img width="300" height="300" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Technology Used
+- React.js  
+- React Router  
+- TailwindCSS  
+- lucide React
+- React Toastify
+- Rechart
+
+---
+
+## ⭐ Features
+- Browse apps by category  
+- View app details  
+- Fully responsive design  
+- Smooth UI/UX interactions  
+- Modern App Store style layout 
+
+---
+
+## 📦 Dependencies
+```json
+"tailwindcss/vite": "^4.1.14",
+"lucide-react": "^0.545.0",
+"react": "^19.1.1",
+"react-dom": "^19.1.1",
+"react-router-dom": "^7.9.4",
+"react-toastify": "^11.0.5",
+"recharts": "^3.2.1"
+```
+
+---
+
+## 🛠 Local Setup
+1. Clone the repo:
+```sh
+git clone https://github.com/Sarwar009/ph-B12A08-App-Store
+```
+
+2. Install dependencies:
+```sh
+npm install
+```
+
+4. Run:
+```sh
+npm run dev
+```
+
+---
+
+## 🧑‍💻 Author
+**Golam Sarwar**  
+GitHub: https://github.com/Sarwar009
+
+
