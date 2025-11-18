@@ -59,7 +59,7 @@ git clone https://github.com/Sarwar009/ph-B12A08-App-Store
 npm install
 ```
 
-4. Run:
+3. Run:
 ```sh
 npm run dev
 ```
