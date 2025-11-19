@@ -54,12 +54,17 @@ This project demonstrates a modern frontend application built with React and Tai
 git clone https://github.com/Sarwar009/ph-B12A08-App-Store
 ```
 
-2. Install dependencies:
+2. Navigate to folder:
+```sh
+cd ph-B12A08-App-Store
+```
+
+3. Install dependencies:
 ```sh
 npm install
 ```
 
-3. Run:
+4. Run:
 ```sh
 npm run dev
 ```
